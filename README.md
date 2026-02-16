@@ -16,6 +16,7 @@ Campus Buddy offers role-based dashboards and functionalities for four distinct 
 - **Grievances**: Submit and track the status of campus-related issues.
 - **Lost & Found**: Post lost items or report found belongings.
 - **Announcements**: Stay updated with announcements from clubs and admin.
+- **extra feature **:live bus tracking seat updation full working mode must check login to student in dashboard go to bus icon then click on open it will open section with two option student and driver where student had to login via student then go to bus select they see live seat updation bus location live all this data is updated via drivers mobile 
 
 ### 👨‍🏫 Professor
 - **Professor Dashboard**: Overview of courses taught, student performance metrics, and quick access to class management.
@@ -113,6 +114,16 @@ Since the project uses mock authentication, you can test different user roles by
     };
     ```
 3.  Restart the frontend and navigate through the application to test features specific to that role.
+
+4.  for login data are as follow:
+         
+       student - rahul.sharma@campus.edu  pass-any
+    
+       club    - arjun.singh@campus.edu
+    
+       profesor- anjali.verma@campus.edu
+    
+       admin   - admin@campus.edu
 
 
 ## 📁 Project Structure
