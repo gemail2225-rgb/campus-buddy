@@ -114,6 +114,7 @@ Since the project uses mock authentication, you can test different user roles by
     ```
 3.  Restart the frontend and navigate through the application to test features specific to that role.
 
+
 ## 📁 Project Structure
 campus-buddy/
 │
@@ -137,14 +138,15 @@ campus-buddy/
 
 **Frontend**
 - HTML / CSS / JavaScript  
-- React / (Update if different)
+- React 
 
+- 
 **Backend**
 - Node.js  
 - Express.js  
 
 **Database**
-- MongoDB / (Update if different)
+- MongoDB 
 
 ---
 
