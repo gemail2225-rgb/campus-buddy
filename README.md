@@ -134,21 +134,6 @@ campus-buddy/
 
 ---
 
-## 🛠️ Tech Stack
-
-**Frontend**
-- HTML / CSS / JavaScript  
-- React 
-
-- 
-**Backend**
-- Node.js  
-- Express.js  
-
-**Database**
-- MongoDB 
-
----
 
 
 
