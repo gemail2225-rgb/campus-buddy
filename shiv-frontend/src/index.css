@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 4%;
+
+    --primary: 32 95% 44%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 38 92% 50%;
+    --secondary-foreground: 20 14% 4%;
+
+    --muted: 33 100% 96%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 20 14% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 33 74% 88%;
+    --input: 33 74% 88%;
+    --ring: 38 92% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 20 14% 4%;
+    --sidebar-primary: 32 95% 44%;
+    --sidebar-primary-foreground: 60 9.1% 97.8%;
+    --sidebar-accent: 38 92% 50%;
+    --sidebar-accent-foreground: 20 14% 4%;
+    --sidebar-border: 33 74% 88%;
+    --sidebar-ring: 38 92% 50%;
+  }
+
+  .dark {
+    --background: 20 14% 8%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 20 14% 10%;
+    --card-foreground: 60 9.1% 97.8%;
+
+    --popover: 20 14% 10%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 20 14% 4%;
+
+    --secondary: 38 92% 50%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 20 14% 15%;
+    --muted-foreground: 60 9.1% 70%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 20 14% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 14% 15%;
+    --input: 20 14% 15%;
+    --ring: 38 92% 50%;
+    
+    --sidebar-background: 20 14% 8%;
+    --sidebar-foreground: 60 9.1% 97.8%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 20 14% 4%;
+    --sidebar-accent: 38 92% 50%;
+    --sidebar-accent-foreground: 60 9.1% 97.8%;
+    --sidebar-border: 20 14% 15%;
+    --sidebar-ring: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add custom animations and utilities */
+@layer utilities {
+  /* Animation delay utilities */
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  /* Gradient animation size */
+  .bg-300\% {
+    background-size: 300%;
+  }
+}
+
+/* Smooth theme transition */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+}
+
+/* Optional: Disable transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

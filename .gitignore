@@ -1,0 +1,4 @@
+node_modules
+.env
+om-backend/node_modules
+shiv-frontend/node_modules
